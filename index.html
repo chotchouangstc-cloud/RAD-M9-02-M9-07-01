@@ -1485,7 +1485,7 @@
             tfoot.innerHTML = `
                 <tr class="font-bold border-t-2 border-purple-300 bg-purple-50/60">
                     <td colspan="2" class="p-3 text-right">
-                        <div class="text-purple-950 font-sans">รวมทั้งสิ้น (จาก PDF : M9-07-01)</div>
+                        <div class="text-purple-950 font-sans">ผลรวมจากไฟล์ (PDF)</div>
                         <div class="text-[9px] text-purple-700 font-sans font-normal truncate max-w-[200px] float-right" title="${d.fileName}">${d.fileName}</div>
                     </td>
                     <td class="p-3 text-right">${formatMoney(d.pdfTotals.mflow)}</td>
@@ -1496,7 +1496,7 @@
                 </tr>
                 <tr class="bg-purple-100/70 text-purple-950 font-semibold border-t border-purple-200">
                     <td colspan="2" class="p-3 text-right font-sans">
-                        <div class="font-bold">ผลรวมบวกสะสมแนวตั้ง (คำนวณจากตาราง)</div>
+                        <div class="font-bold">ผลรวมบวกสะสมแนวตั้ง (คิดจากตาราง)</div>
                     </td>
                     <td class="p-3 text-right">
                         <div>${formatMoney(d.calcTotals.mflow)}</div>
