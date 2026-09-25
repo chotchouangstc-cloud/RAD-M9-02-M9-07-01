@@ -308,7 +308,7 @@
                             <th class="p-3.5 text-right w-36">DOH บริหารฯ<br><span class="text-[9px] text-blue-300 font-normal"></span></th>
                             <th class="p-3.5 text-right w-36">DOH ตรวจสอบฯ<br><span class="text-[9px] text-blue-300 font-normal"></span></th>
                             <th class="p-3.5 text-right w-36">ส่วนต่าง (บาท)<br><span class="text-[9px] text-blue-300 font-normal"></span></th>
-                            <th class="p-3.5 text-center">คณิตศาสตร์ภายใน<br><span class="text-[9px] text-slate-300 font-normal"></span></th>
+                            <th class="p-3.5 text-center">ตรวจ M9-02<br><span class="text-[9px] text-slate-300 font-normal"></span></th>
                             <th class="p-3.5 text-center bg-blue-900/40">เทียบยอด 2 ไฟล์<br><span class="text-[9px] text-blue-200 font-normal"></span></th>
                             <th class="p-3.5 text-center">รายละเอียด</th>
                         </tr>
@@ -1413,14 +1413,14 @@
                 let internalBadge = `<span class="text-slate-400">-</span>`;
                 if (hasM02) {
                     internalBadge = record.m902.isOverallValid ?
-                        `<span class="bg-emerald-100/90 text-emerald-800 text-[10px] px-2 py-0.5 rounded-full font-medium inline-flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> สมบูรณ์</span>` :
+                        `<span class="bg-emerald-100/90 text-emerald-800 text-[10px] px-2 py-0.5 rounded-full font-medium inline-flex items-center gap-1"><i data-lucide="check" class="w-3 h-3"></i> ถูกต้อง</span>` :
                         `<span class="bg-rose-100/90 text-rose-800 text-[10px] px-2 py-0.5 rounded-full font-medium inline-flex items-center gap-1"><i data-lucide="x" class="w-3 h-3"></i> ขัดแย้ง</span>`;
                 }
 
                 let crossBadge = `<span class="text-slate-400 text-[10px]">รอไฟล์เทียบ</span>`;
                 if (hasM02 && hasM07) {
                     crossBadge = record.isCrossCheckValid ?
-                        `<span class="bg-blue-600 text-white text-[10px] px-2.5 py-1 rounded-lg font-semibold inline-flex items-center gap-1 shadow-sm"><i data-lucide="shield-check" class="w-3 h-3"></i> ตรงกัน 100%</span>` :
+                        `<span class="bg-emerald-600 text-white text-[10px] px-2.5 py-1 rounded-lg font-semibold inline-flex items-center gap-1 shadow-sm"><i data-lucide="shield-check" class="w-3 h-3"></i> ตรงกัน 100%</span>` :
                         `<span class="bg-rose-600 text-white text-[10px] px-2.5 py-1 rounded-lg font-semibold inline-flex items-center gap-1 shadow-sm"><i data-lucide="alert-triangle" class="w-3 h-3"></i> ไม่ตรงกัน!</span>`;
                 }
 
